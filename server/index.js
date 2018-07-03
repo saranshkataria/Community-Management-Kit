@@ -1,11 +1,11 @@
-const { GraphQLServer } = require('graphql-yoga')
+const { GraphQLServer } = require('graphql-yoga');
 
 const sampleItems = [
-  {name: 'Apple'},
-  {name: 'Banana'},
-  {name: 'Orange'},
-  {name: 'Melon'},
-]
+  { name: 'Apple' },
+  { name: 'Banana' },
+  { name: 'Orange' },
+  { name: 'Melon' }
+];
 
 const typeDefs = `
   type Query {
@@ -15,14 +15,16 @@ const typeDefs = `
   type Item {
     name: String!
   }
-`
+`;
 
 const resolvers = {
   Query: {
-    items: () => sampleItems,
-  },
-}
+    items: () => sampleItems
+  }
+};
 
-const options = { port: 4000 }
-const server = new GraphQLServer({ typeDefs, resolvers })
-server.start(options, () => console.log('Server is running on localhost:' + options.port))
+const options = { port: 4000 };
+const server = new GraphQLServer({ typeDefs, resolvers });
+server.start(options, () =>
+  console.log('Server is running on localhost:' + options.port)
+);
