@@ -1,10 +1,11 @@
 {
-  "name": "fullstack",
+  "name": "community-management-kit",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "apollo-client-preset": "1.0.6",
     "concurrently": "3.6.0",
+    "esm": "3.0.61",
     "graphql": "0.12.3",
     "graphql-tag": "2.6.1",
     "graphql-yoga": "1.2.0",
@@ -14,7 +15,7 @@
     "react-scripts": "1.1.0"
   },
   "scripts": {
-    "start-backend": "node server/index.js",
+    "start-backend": "node -r esm server/index.js",
     "start-frontend": "react-scripts start",
     "build-frontend": "react-scripts build",
     "test-frontend": "react-scripts test --env=jsdom",

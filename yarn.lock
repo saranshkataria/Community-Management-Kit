@@ -1845,7 +1845,7 @@ concat-stream@^1.6.0:
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
 
-concurrently@^3.6.0:
+concurrently@3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/concurrently/-/concurrently-3.6.0.tgz#c25e34b156a9d5bd4f256a0d85f6192438ae481f"
   dependencies:
@@ -2712,6 +2712,10 @@ eslint@4.10.0:
     strip-json-comments "~2.0.1"
     table "^4.0.1"
     text-table "~0.2.0"
+
+esm@^3.0.61:
+  version "3.0.61"
+  resolved "https://registry.yarnpkg.com/esm/-/esm-3.0.61.tgz#671dfb8cf57fe63852c191b85d7762d0d0789e00"
 
 espree@^3.5.1:
   version "3.5.4"
